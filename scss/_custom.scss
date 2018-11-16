@@ -127,7 +127,7 @@ small {
   border-right: 1px solid $primary-color;
   align-items: right;
   justify-content: right;
-  
+
   .timestamp {
   margin-top: 0;
   padding-top: 0;
@@ -150,13 +150,11 @@ small {
     margin-bottom: 2rem;
     margin:0 auto;
     padding: 1rem;
-    position: absolute;
-    display: inline-block;
     background: rgba(255, 255, 255, 0.8);
     border: 1px solid $warning-color;
     align-items: center;
     justify-content: center;
-    
+
     .feature-img {
       margin-bottom: 0.5rem;
       //height: 100px;
@@ -165,7 +163,7 @@ small {
       //border-radius: 50%;
       align-items: center;
       overflow: hidden;
-      
+
       img {
         display: inline;
         margin: 0 auto;
@@ -174,7 +172,7 @@ small {
         width: auto;
       }
     }
-    
+
 }
 
 .urgent-needs {
@@ -411,14 +409,19 @@ small {
 .how-it-works {
     .step {
         position: relative;
+        padding-left: 40px;
+        padding-right: 40px;
 
         .number {
             position: absolute;
             z-index: 1;
+            padding-left: 10px;
 
             h3 {
                 font-size: rem-calc(120);
-
+                color: $warning-color;
+                line-height: 0.8;
+                margin-top: 0;
             }
         }
 
@@ -429,7 +432,6 @@ small {
         }
 
         p {
-            font-size: $h4-font-size;
             color: $white;
             font-weight: 600;
             margin-top: 1rem;
@@ -451,7 +453,7 @@ small {
 }
 
 .news.panel {
-    h5 {
+    h6 {
         color: $jet;
         margin-bottom: 1rem;
     }
@@ -472,7 +474,8 @@ small {
 }
 
 .banner {
-    padding: 1rem;
+    padding: 0.5rem;
+    width: 100%;
     position: fixed;
     z-index: 3;
     transition: transform 0.5s linear, opacity 0.5s ease-in;
@@ -481,7 +484,7 @@ small {
     .alert-content {
         display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: center;
 
         p {
             font-size: 1.2rem;
@@ -506,14 +509,14 @@ h1 {
 }
 
 h2 {
-    font-size: calc(30px + 3.3vw);
+    font-size: calc(28px + 3vw);
 }
 
 h3 {
     font-size: calc(22px + 2.2vw);
 }
 
-.large-12 {
+.columns {
     z-index: 0;
 }
 
@@ -575,10 +578,26 @@ footer {
     }
 }
 
+#global-map {
+    height: 420px;
+}
+
+.marker {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: $primary-color;
+  cursor: pointer;
+}
+
 @media #{$medium-up} {
 
-    .columns.overlap {
-        height: 300px;
+    .columns.overlap-1 {
+        height: 150px;
+    }
+
+    .columns.overlap-2 {
+        height: 350px;
     }
 
     .stagger {
@@ -588,6 +607,12 @@ footer {
     .padding-top-lg {
         padding-top: 4rem;
     }
+
+    .padding-top-sm {
+        padding-top: 2rem;
+    }
+
+
 
     .padding-bottom-lg {
         padding-bottom: 4rem;

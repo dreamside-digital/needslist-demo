@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.js'></script>
   </head>
   <body>
 
-    <section class="banner bg-info" data-aos="slide-down" data-aos-delay="1000">
+    <section class="banner bg-warning" data-aos="slide-down" data-aos-delay="1000">
       <div class="row">
         <div class="small-10 columns">
           <div class="alert-content">
             <p>Here’s a concrete way to put your cryptocurrency to use for Florence relief</p>
-            <button>Read more</button>
+            <p><a class="warning bold">Read more</a></p>
           </div>
         </div>
       </div>
@@ -56,12 +58,12 @@
     </div>
 
 
-    <section class="landing padding-top-lg">
-  <div>
+  <section class="landing padding-top-lg padding-bottom-lg bg-info">
+    <div>
       <div class="row">
         <div class="large-6 columns" data-aos="fade-right">
-          <h1>Transparent simple and <span class="underline">direct</span></h1>
-          <p class="large  margin-top-sm">We're designing new ways to meet the needs of displaced people world wide.</p>
+          <h1>Simple, transparent, <span class="underline light">direct</span></h1>
+          <p class="large  margin-top-sm">We're designing new ways to meet the needs of displaced people worldwide.</p>
         </div>
 
         <div class="small-12 large-5 columns right" data-aos="fade-left">
@@ -88,16 +90,16 @@
       </div>
     </section>
 
-    <section class="urgent-needs">
+    <section class="urgent-needs padding-top-lg">
       <div class="row">
         <div class="large-12 columns">
-          <h2><span class="underline">Urgent needs</span></h2>
+          <h2><span class="underline">Communities in crisis</span></h2>
           <div class="row">
 
             <div class="large-4 columns" data-aos="fade-up">
               <div class="theme panel">
                 <div class="theme-logo info">
-                  <img src="images/flame-icon.png" alt="">
+                  <img src="images/fire.svg" alt="">
                 </div>
                 <div class="header bg-info">
                   <h4>Wildfire relief</h4>
@@ -128,7 +130,7 @@
                   </div>
 
                   <div class="actions text-right">
-                    <button class="alert">I can help!</button>
+                    <button class="alert small">I can help!</button>
                   </div>
                 </div>
               </div>
@@ -138,7 +140,7 @@
             <div class="large-4 columns" data-aos="fade-up" data-aos-delay="100">
               <div class="theme panel">
                 <div class="theme-logo info">
-                  <img src="images/tent-icon.png" alt="">
+                  <img src="images/city-skyline.svg" alt="">
                 </div>
                 <div class="header bg-info">
                   <h4>Refugee Resettlement</h4>
@@ -169,7 +171,7 @@
                   </div>
 
                   <div class="actions text-right">
-                    <button class="alert">I can help!</button>
+                    <button class="alert small">I can help!</button>
                   </div>
                 </div>
               </div>
@@ -179,7 +181,7 @@
             <div class="large-4 columns" data-aos="fade-up" data-aos-delay="200">
               <div class="theme panel">
                 <div class="theme-logo info">
-                  <img src="images/caravan-icon.png" alt="">
+                  <img src="images/hurricane.svg" alt="">
                 </div>
                 <div class="header bg-info">
                   <h4>Hurricane relief</h4>
@@ -210,7 +212,7 @@
                   </div>
 
                   <div class="actions text-right">
-                    <button class="alert">I can help!</button>
+                    <button class="alert small">I can help!</button>
                   </div>
                 </div>
               </div>
@@ -229,7 +231,7 @@
       <div class="row">
 
         <div class="large-12 columns">
-          <h2>Local <span class="underline">people</span>,<br> global <span class="underline">impact</span></h2>
+          <h2>Give <span class="underline">global</span>,<br> buy <span class="underline">local</span></h2>
         </div>
       </div>
 
@@ -238,59 +240,61 @@
           <div class="map-container">
 
             <div class="map">
-
               <div class="row">
 
                 <div class="large-3 columns">
-                    <div class="large-10 recent-giving">
-                      <h5 class="small margin-right-lg">recent givings</h5>
+                  <div class="recent-giving">
+                    <h5 class="small margin-right-lg">recent givings</h5>
                       <div data-aos="fade-down" data-aos-delay="150">
-                      <p class="xsmall"><strong>Warm Sleeping BagsFor homeless refugee & asylum seekers in Rome</strong> <br> - anonymous</p>
-                      <p class="xsmall timestamp">1 day ago</p>
-                      <hr>
+                        <p class="xsmall"><strong>Warm Sleeping BagsFor homeless refugee & asylum seekers in Rome</strong> <br> - anonymous</p>
+                        <p class="xsmall timestamp">1 day ago</p>
+                        <hr>
                       </div>
                       <div data-aos="fade-down" data-aos-delay="200">
-                      <p class="xsmall"><strong>Warm Sleeping BagsFor homeless refugee & asylum seekers in Rome</strong> <br> - anonymous</p>
-                      <p class="xsmall timestamp">1 day ago</p>
-                      <hr>
+                        <p class="xsmall"><strong>Warm Sleeping BagsFor homeless refugee & asylum seekers in Rome</strong> <br> - anonymous</p>
+                        <p class="xsmall timestamp">1 day ago</p>
+                        <hr>
                     </div>
                     <div data-aos="fade-down" data-aos-delay="250">
-                      <p class="xsmall"><strong>Warm Sleeping BagsFor homeless refugee & asylum seekers in Rome</strong> <br> - anonymous</p>
-                      <p class="xsmall timestamp">1 day ago</p>
-                      <hr>
+                        <p class="xsmall"><strong>Warm Sleeping BagsFor homeless refugee & asylum seekers in Rome</strong> <br> - anonymous</p>
+                        <p class="xsmall timestamp">1 day ago</p>
+                        <hr>
                     </div>
                     <div data-aos="fade-down" data-aos-delay="300">
-                      <p class="xsmall"><strong>Warm Sleeping BagsFor homeless refugee & asylum seekers in Rome</strong> <br> - anonymous</p>
-                      <p class="xsmall timestamp">1 day ago</p>
+                        <p class="xsmall"><strong>Warm Sleeping BagsFor homeless refugee & asylum seekers in Rome</strong> <br> - anonymous</p>
+                        <p class="xsmall timestamp">1 day ago</p>
                     </div>
+                  </div>
+                </div>
+
+                <div class="large-9 columns">
+                  <div class="row">
+                    <div class="large-4 columns text-center" data-aos="fade-left">
+                      <h2 class="number">$350k</h2>
+                      <h5>invested in local economies</h5>
                     </div>
-                </div>
 
-                <div class="large-3 columns text-center" data-aos="fade-left">
-                  <h2 class="number">$350k</h2>
-                  <h5>invested in local economies</h5>
-                </div>
+                    <div class="large-4 columns text-center" data-aos="fade-left" data-aos-delay="100">
+                      <h2 class="number">152</h2>
+                      <h5>trusted NGOs</h5>
+                    </div>
 
-                <div class="large-3 columns text-center" data-aos="fade-left" data-aos-delay="50">
-                  <h2 class="number">152</h2>
-                  <h5>trusted NGOs</h5>
-                </div>
+                    <div class="large-4 columns text-center" data-aos="fade-left" data-aos-delay="200">
+                      <h2 class="number">47k</h2>
+                      <h5>needs met</h5>
+                    </div>
+                  </div>
 
-                <div class="large-3 columns text-center" data-aos="fade-left" data-aos-delay="100">
-                  <h2 class="number">47k</h2>
-                  <h5>needs met</h5>
+                  <div class="row">
+                    <div class="large-12 columns">
+                      <div id="global-map"></div>
+                    </div>
+                  </div>
+
+
                 </div>
-                <img class="large-9 right" src="images/map.svg" alt="" data-aos="fade-in">
               </div>
             </div>
-          </div>
-          <div class="large-2 feature-items right bottom" data-aos="fade-left" data-aos-delay="1000">
-            <h5 class="small margin-left-sm">success story</h5>
-            <div>
-            <img class="feature-img" src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Falanamatos%2Ffiles%2F2017%2F10%2FScreen-Shot-2017-10-17-at-1.29.52-PM-1.jpg">
-          </div>
-            <p class="xsmall">NeedsList delivered over 47k to local organizations, see how we did it.</p>
-            <a href="">Read More </a>
           </div>
         </div>
       </div>
@@ -298,7 +302,7 @@
 
       <div class="row">
 
-        <div class="columns large-12 padding-top-lg">
+        <div class="columns large-10 padding-top-lg">
           <h3>Join our network</h3>
           <div class="row">
             <div class="columns large-9 large-push-1">
@@ -307,6 +311,16 @@
             </div>
           </div>
         </div>
+
+        <div class="large-2 feature-items right bottom columns" data-aos="fade-left" data-aos-delay="1000">
+          <h5 class="small margin-left-sm">success story</h5>
+          <div>
+            <img class="feature-img" src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Falanamatos%2Ffiles%2F2017%2F10%2FScreen-Shot-2017-10-17-at-1.29.52-PM-1.jpg">
+          </div>
+          <p class="xsmall">NeedsList delivered over 47k to local organizations, see how we did it.</p>
+          <a href="">Read More </a>
+        </div>
+
       </div>
 
     </section>
@@ -321,11 +335,11 @@
             </div>
           </div>
 
-          <div class="row padding-top-lg padding-bottom-lg">
+          <div class="row padding-top-sm padding-bottom-lg">
 
             <div class="large-12 columns how-it-works">
 
-              <div class="columns large-12 overlap">
+              <div class="columns large-12 overlap-1">
                 <div class="step-1 step columns large-5" data-aos="fade-up">
                   <div class="number">
                     <h3>1</h3>
@@ -338,8 +352,8 @@
                 </div>
               </div>
 
-              <div class="columns large-12 overlap">
-                <div class="step-1 step right columns large-5" data-aos="fade-up">
+              <div class="columns large-12 overlap-2">
+                <div class="step-1 step right columns large-5" data-aos="fade-up" data-aos-offset="250">
                   <div class="number">
                     <h3>2</h3>
                   </div>
@@ -351,7 +365,7 @@
                 </div>
               </div>
 
-              <div class="columns large-12 large-push-1">
+              <div class="columns large-12 large-push-2">
                 <div class="step-1 step columns large-5" data-aos="fade-up">
                   <div class="number">
                     <h3>3</h3>
@@ -538,8 +552,8 @@
                     </div>
                   </div>
                   <div class="large-8 columns">
-                    <h5>This Startup Is Leading The Effort For The Future Of Humanitarian Aid</h5>
-                    <button>Read more</button>
+                    <h6>This Startup Is Leading The Effort For The Future Of Humanitarian Aid</h6>
+                    <button class="small">Read more</button>
                   </div>
                 </div>
               </div>
@@ -552,8 +566,8 @@
                     </div>
                   </div>
                   <div class="large-8 columns">
-                    <h5>TripAdvisor taps NeedsList to connect employees with refugees</h5>
-                    <button>Read more</button>
+                    <h6>TripAdvisor taps NeedsList to connect employees with refugees</h6>
+                    <button class="small">Read more</button>
                   </div>
                 </div>
               </div>
@@ -570,8 +584,8 @@
                     </div>
                   </div>
                   <div class="large-8 columns">
-                    <h5>Durham-based NeedsList provides real-time needs registry for Florence, global disasters</h5>
-                    <button>Read more</button>
+                    <h6>Durham-based NeedsList provides real-time needs registry for Florence, global disasters</h6>
+                    <button class="small">Read more</button>
                   </div>
                 </div>
               </div>
@@ -584,8 +598,8 @@
                     </div>
                   </div>
                   <div class="large-8 columns">
-                    <h5>Innovation in humanitarian relief</h5>
-                    <button>Read more</button>
+                    <h6>Innovation in humanitarian relief</h6>
+                    <button class="small">Read more</button>
                   </div>
                 </div>
               </div>
@@ -741,8 +755,10 @@
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/countup.js"></script>
+    <script src="js/map.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <script>
       AOS.init({ offset: 200, duration: 450 });
 
@@ -755,12 +771,6 @@
           pauseOnHover: true,
           autoplaySpeed: 4000,
         });
-      });
-
-      $(document).ready(function(){
-        window.setTimeout(function() {
-          $('.banner').addClass('fade-out');
-        }, 7000);
       });
     </script>
   </body>
