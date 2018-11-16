@@ -2,7 +2,6 @@ body {
     overflow-x: hidden;
 }
 
-
 .circle {
     background: $primary-color;
     border-radius: 50%;
@@ -45,12 +44,17 @@ h1, h2, h2, h3, h4, h5, h6 {
             content: '';
             width: 100%;
             height: 0.2em;
-            background: #0E6976;
             position: absolute;
             bottom: 0.175em;
             left: 0;
             z-index: -1;
             background: $primary-color;
+        }
+
+        &.light {
+            &:after {
+                background: $warning-color;
+            }
         }
     }
 }
@@ -322,6 +326,7 @@ small {
             font-size: $h4-font-size;
             color: $white;
             font-weight: $font-weight-bold;
+            margin-top: 1rem;
         }
     }
 }
@@ -371,6 +376,10 @@ h3 {
     font-size: calc(22px + 2.2vw);
 }
 
+.large-12 {
+    z-index: 0;
+}
+
 @media #{$medium-up} {
 
     .columns.overlap {
@@ -399,6 +408,6 @@ h3 {
 
 @media #{$xlarge-up} {
     h1 {
-        font-size: calc(30px + 4vw);
+        font-size: calc(30px + 3.6vw);
     }
 }
