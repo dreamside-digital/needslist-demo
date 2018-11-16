@@ -9825,11 +9825,9 @@ body {
   margin-top: 50rem;
 }
 
-/* line 67, ../scss/_custom.scss */
-a {
+/*a {
   text-decoration: underline;
-}
-
+}*/
 /* line 72, ../scss/_custom.scss */
 h1 span.underline, h2 span.underline, h2 span.underline, h3 span.underline, h4 span.underline, h5 span.underline, h6 span.underline {
   position: relative;
