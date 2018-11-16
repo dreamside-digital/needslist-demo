@@ -297,6 +297,10 @@ small {
     }
 }
 
+.bg-white {
+    background: $white;
+}
+
 .number {
     color: $primary-color;
     margin-bottom: 0.5rem;
@@ -362,6 +366,34 @@ small {
 
 .alert {
     color: $alert-color;
+}
+
+.banner {
+    padding: 0.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    transition: transform 0.5s linear;
+    border-bottom: 3px solid $warning-color;
+
+    .alert-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        p {
+            font-weight: $font-weight-normal;
+            margin-bottom: 0;
+        }
+
+        button {
+            white-space: nowrap;
+        }
+    }
+
+    &.fade-out {
+        transform: translate3d(0, -100%, 0) !important;
+    }
 }
 
 h1 {
