@@ -181,7 +181,7 @@ select {
 /* line 228, ../bower_components/foundation/scss/foundation/components/_grid.scss */
 .row {
   margin: 0 auto;
-  max-width: 80rem;
+  max-width: 74.375rem;
   width: 100%;
 }
 /* line 239, ../bower_components/foundation/scss/foundation/components/_global.scss */
@@ -6008,7 +6008,7 @@ ul.pagination li {
   .reveal-modal {
     left: 0;
     margin: 0 auto;
-    max-width: 80rem;
+    max-width: 74.375rem;
     right: 0;
     width: 80%;
   }
@@ -6039,7 +6039,7 @@ ul.pagination li {
   .reveal-modal.tiny {
     left: 0;
     margin: 0 auto;
-    max-width: 80rem;
+    max-width: 74.375rem;
     right: 0;
     width: 30%;
   }
@@ -6049,7 +6049,7 @@ ul.pagination li {
   .reveal-modal.small {
     left: 0;
     margin: 0 auto;
-    max-width: 80rem;
+    max-width: 74.375rem;
     right: 0;
     width: 40%;
   }
@@ -6059,7 +6059,7 @@ ul.pagination li {
   .reveal-modal.medium {
     left: 0;
     margin: 0 auto;
-    max-width: 80rem;
+    max-width: 74.375rem;
     right: 0;
     width: 60%;
   }
@@ -6069,7 +6069,7 @@ ul.pagination li {
   .reveal-modal.large {
     left: 0;
     margin: 0 auto;
-    max-width: 80rem;
+    max-width: 74.375rem;
     right: 0;
     width: 70%;
   }
@@ -6079,7 +6079,7 @@ ul.pagination li {
   .reveal-modal.xlarge {
     left: 0;
     margin: 0 auto;
-    max-width: 80rem;
+    max-width: 74.375rem;
     right: 0;
     width: 95%;
   }
@@ -6099,7 +6099,7 @@ ul.pagination li {
   .reveal-modal.full {
     left: 0;
     margin: 0 auto;
-    max-width: 80rem;
+    max-width: 74.375rem;
     right: 0;
     width: 100%;
   }
@@ -7444,7 +7444,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     margin: 0 auto;
     margin-bottom: 0;
-    max-width: 80rem;
+    max-width: 74.375rem;
   }
 
   /* line 536, ../bower_components/foundation/scss/foundation/components/_top-bar.scss */
@@ -9735,7 +9735,12 @@ th.hide-for-touch {
     display: table-cell !important;
   }
 }
-/* line 2, ../scss/_custom.scss */
+/* line 1, ../scss/_custom.scss */
+body {
+  overflow-x: hidden;
+}
+
+/* line 6, ../scss/_custom.scss */
 .circle {
   background: #228FA8;
   border-radius: 50%;
@@ -9747,54 +9752,54 @@ th.hide-for-touch {
   position: relative;
   width: 100%;
 }
-/* line 13, ../scss/_custom.scss */
+/* line 17, ../scss/_custom.scss */
 .circle img {
   bottom: 0;
   height: 100%;
+  width: 100%;
   left: 0;
   -o-object-fit: cover;
   object-fit: cover;
   position: absolute;
   top: 0;
-  width: 100%;
 }
 
-/* line 25, ../scss/_custom.scss */
+/* line 29, ../scss/_custom.scss */
 .circle-shadow {
   margin-right: 1rem;
   box-shadow: 1rem -1rem 0 #228FA8;
 }
 
-/* line 32, ../scss/_custom.scss */
+/* line 36, ../scss/_custom.scss */
 .stagger-1 {
   margin-top: 10rem;
 }
 
-/* line 32, ../scss/_custom.scss */
+/* line 36, ../scss/_custom.scss */
 .stagger-2 {
   margin-top: 20rem;
 }
 
-/* line 32, ../scss/_custom.scss */
+/* line 36, ../scss/_custom.scss */
 .stagger-3 {
   margin-top: 30rem;
 }
 
-/* line 32, ../scss/_custom.scss */
+/* line 36, ../scss/_custom.scss */
 .stagger-4 {
   margin-top: 40rem;
 }
 
-/* line 32, ../scss/_custom.scss */
+/* line 36, ../scss/_custom.scss */
 .stagger-5 {
   margin-top: 50rem;
 }
 
-/* line 38, ../scss/_custom.scss */
+/* line 42, ../scss/_custom.scss */
 h1 span.underline, h2 span.underline, h2 span.underline, h3 span.underline, h4 span.underline, h5 span.underline, h6 span.underline {
   position: relative;
 }
-/* line 40, ../scss/_custom.scss */
+/* line 44, ../scss/_custom.scss */
 h1 span.underline:after, h2 span.underline:after, h2 span.underline:after, h3 span.underline:after, h4 span.underline:after, h5 span.underline:after, h6 span.underline:after {
   content: '';
   width: 100%;
@@ -9807,36 +9812,36 @@ h1 span.underline:after, h2 span.underline:after, h2 span.underline:after, h3 sp
   background: #228FA8;
 }
 
-/* line 54, ../scss/_custom.scss */
+/* line 59, ../scss/_custom.scss */
 h1, h2, h3, h4 {
   text-transform: uppercase;
 }
 
-/* line 58, ../scss/_custom.scss */
+/* line 63, ../scss/_custom.scss */
 small {
   font-size: 1.1rem;
   font-weight: 300;
 }
 
-/* line 63, ../scss/_custom.scss */
+/* line 68, ../scss/_custom.scss */
 .large {
   font-size: 1.8rem;
   padding-right: 1rem;
 }
 
-/* line 68, ../scss/_custom.scss */
+/* line 73, ../scss/_custom.scss */
 .panel {
   box-shadow: -3px 3px 10px rgba(0, 0, 0, 0.2);
   position: relative;
 }
 
-/* line 74, ../scss/_custom.scss */
+/* line 79, ../scss/_custom.scss */
 .urgent-needs .theme {
   padding: 0;
   position: relative;
   margin-top: 60px;
 }
-/* line 79, ../scss/_custom.scss */
+/* line 84, ../scss/_custom.scss */
 .urgent-needs .theme .theme-logo {
   position: absolute;
   height: 120px;
@@ -9850,101 +9855,103 @@ small {
   align-items: center;
   justify-content: center;
 }
-/* line 92, ../scss/_custom.scss */
+/* line 97, ../scss/_custom.scss */
 .urgent-needs .theme .theme-logo.info {
   border: 3px solid #094048;
 }
-/* line 96, ../scss/_custom.scss */
+/* line 101, ../scss/_custom.scss */
 .urgent-needs .theme .theme-logo.success {
   border: 3px solid #0E6976;
 }
-/* line 100, ../scss/_custom.scss */
+/* line 105, ../scss/_custom.scss */
 .urgent-needs .theme .theme-logo.primary {
   border: 3px solid #228FA8;
 }
-/* line 105, ../scss/_custom.scss */
+/* line 110, ../scss/_custom.scss */
 .urgent-needs .theme .header {
   padding: 1rem;
   padding-top: 60px;
 }
-/* line 114, ../scss/_custom.scss */
+/* line 119, ../scss/_custom.scss */
 .urgent-needs .theme .need {
   padding: 1rem;
 }
-/* line 117, ../scss/_custom.scss */
+/* line 122, ../scss/_custom.scss */
 .urgent-needs .theme .need p {
   margin-bottom: 0;
 }
-/* line 122, ../scss/_custom.scss */
+/* line 127, ../scss/_custom.scss */
 .urgent-needs .theme .icon {
   height: 24px;
   padding-right: 6px;
   color: #FFFFFF;
 }
-/* line 128, ../scss/_custom.scss */
+/* line 133, ../scss/_custom.scss */
 .urgent-needs .theme .progress {
   margin-bottom: 0;
 }
-/* line 132, ../scss/_custom.scss */
+/* line 137, ../scss/_custom.scss */
 .urgent-needs .theme .progress-bar {
   margin-top: 1.25rem;
   margin-bottom: 1.25rem;
 }
 
-/* line 139, ../scss/_custom.scss */
+/* line 144, ../scss/_custom.scss */
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* line 145, ../scss/_custom.scss */
+/* line 150, ../scss/_custom.scss */
 .testimonial-container {
   display: flex;
   justify-content: center;
 }
-/* line 149, ../scss/_custom.scss */
+/* line 154, ../scss/_custom.scss */
 .testimonial-container .arrow-left {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   cursor: pointer;
 }
-/* line 155, ../scss/_custom.scss */
+/* line 160, ../scss/_custom.scss */
 .testimonial-container .arrow-left img {
   width: 60px;
   transform: translateY(-50px);
 }
-/* line 161, ../scss/_custom.scss */
+/* line 166, ../scss/_custom.scss */
 .testimonial-container .arrow-right {
   display: flex;
   align-items: center;
   justify-content: flex-start;
   cursor: pointer;
 }
-/* line 167, ../scss/_custom.scss */
+/* line 172, ../scss/_custom.scss */
 .testimonial-container .arrow-right img {
   width: 60px;
   transform: translateY(-50px);
 }
 
-/* line 174, ../scss/_custom.scss */
+/* line 179, ../scss/_custom.scss */
 .testimonials {
+  width: 100%;
   max-width: 800px;
   display: flex;
   align-items: center;
 }
 
-/* line 181, ../scss/_custom.scss */
+/* line 187, ../scss/_custom.scss */
 .testimonial-card {
   padding: 10px;
   padding-bottom: 60px;
 }
-/* line 185, ../scss/_custom.scss */
+/* line 191, ../scss/_custom.scss */
 .testimonial-card .panel {
   padding: 2rem;
+  padding-bottom: 60px;
 }
-/* line 187, ../scss/_custom.scss */
+/* line 195, ../scss/_custom.scss */
 .testimonial-card .panel .testimonial-logo {
   position: absolute;
   height: 120px;
@@ -9959,12 +9966,12 @@ small {
   align-items: center;
   justify-content: center;
 }
-/* line 204, ../scss/_custom.scss */
+/* line 212, ../scss/_custom.scss */
 .testimonial-card .quote p {
-  font-size: 1.875rem;
+  font-size: 1.375rem;
   font-style: italic;
 }
-/* line 210, ../scss/_custom.scss */
+/* line 218, ../scss/_custom.scss */
 .testimonial-card .line {
   width: 60px;
   height: 3px;
@@ -9972,139 +9979,193 @@ small {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
-/* line 218, ../scss/_custom.scss */
+/* line 226, ../scss/_custom.scss */
 .testimonial-card .attribution {
   font-weight: 300;
 }
-/* line 221, ../scss/_custom.scss */
+/* line 229, ../scss/_custom.scss */
 .testimonial-card .attribution p {
   margin-bottom: 0;
 }
-/* line 225, ../scss/_custom.scss */
+/* line 233, ../scss/_custom.scss */
 .testimonial-card .attribution .small {
   font-size: 1.1rem;
 }
+@media only screen and (min-width: 40.0625em) {
+  /* line 240, ../scss/_custom.scss */
+  .testimonial-card .quote p {
+    font-size: 1.875rem;
+    font-style: italic;
+  }
+  /* line 248, ../scss/_custom.scss */
+  .testimonial-card .attribution .small {
+    font-size: 0.9rem;
+  }
+}
 
-/* line 232, ../scss/_custom.scss */
+/* line 257, ../scss/_custom.scss */
 .padding-top-lg {
-  padding-top: 4rem;
+  padding-top: 2rem;
 }
 
-/* line 236, ../scss/_custom.scss */
+/* line 261, ../scss/_custom.scss */
 .padding-bottom-lg {
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 
-/* line 240, ../scss/_custom.scss */
+/* line 265, ../scss/_custom.scss */
 .margin-top-sm {
   margin-top: 1rem;
 }
 
-/* line 243, ../scss/_custom.scss */
+/* line 268, ../scss/_custom.scss */
 .margin-bottom-sm {
   margin-bottom: 1rem;
 }
 
-/* line 247, ../scss/_custom.scss */
+/* line 272, ../scss/_custom.scss */
 .bg-info {
   background: #094048;
   color: #FFFFFF;
 }
-/* line 250, ../scss/_custom.scss */
+/* line 275, ../scss/_custom.scss */
 .bg-info h1, .bg-info h2, .bg-info h3, .bg-info h4, .bg-info h5, .bg-info h6, .bg-info p {
   color: #FFFFFF;
 }
 
-/* line 255, ../scss/_custom.scss */
+/* line 280, ../scss/_custom.scss */
 .bg-primary {
   background: #228FA8;
   color: #FFFFFF;
 }
-/* line 258, ../scss/_custom.scss */
+/* line 283, ../scss/_custom.scss */
 .bg-primary h1, .bg-primary h2, .bg-primary h3, .bg-primary h4, .bg-primary h5, .bg-primary h6, .bg-primary p {
   color: #FFFFFF;
 }
 
-/* line 263, ../scss/_custom.scss */
+/* line 288, ../scss/_custom.scss */
 .bg-success {
   background: #0E6976;
   color: #FFFFFF;
 }
-/* line 266, ../scss/_custom.scss */
+/* line 291, ../scss/_custom.scss */
 .bg-success h1, .bg-success h2, .bg-success h3, .bg-success h4, .bg-success h5, .bg-success h6, .bg-success p {
   color: #FFFFFF;
 }
 
-/* line 271, ../scss/_custom.scss */
+/* line 296, ../scss/_custom.scss */
 .number {
   color: #228FA8;
   margin-bottom: 0.5rem;
 }
 
-/* line 277, ../scss/_custom.scss */
+/* line 302, ../scss/_custom.scss */
 .how-it-works .step {
   position: relative;
 }
-/* line 280, ../scss/_custom.scss */
+/* line 305, ../scss/_custom.scss */
 .how-it-works .step .number {
   position: absolute;
   z-index: 1;
 }
-/* line 284, ../scss/_custom.scss */
+/* line 309, ../scss/_custom.scss */
 .how-it-works .step .number h3 {
   font-size: 7.5rem;
 }
-/* line 291, ../scss/_custom.scss */
+/* line 316, ../scss/_custom.scss */
 .how-it-works .step .circle img {
   object-fit: contain;
 }
-/* line 296, ../scss/_custom.scss */
+/* line 321, ../scss/_custom.scss */
 .how-it-works .step p {
   font-size: 1.75rem;
   color: #FFFFFF;
   font-weight: 700;
 }
 
-/* line 304, ../scss/_custom.scss */
-.columns.overlap {
-  height: 300px;
-}
-
-/* line 308, ../scss/_custom.scss */
+/* line 330, ../scss/_custom.scss */
 .logos {
   padding-top: 2rem;
   padding-bottom: 2rem;
   display: flex;
   align-items: center;
 }
-/* line 314, ../scss/_custom.scss */
+/* line 336, ../scss/_custom.scss */
 .logos .partner-logo img {
   max-height: 120px;
 }
 
-/* line 320, ../scss/_custom.scss */
+/* line 342, ../scss/_custom.scss */
 .news.panel h5 {
   color: #222222;
   margin-bottom: 1rem;
 }
-/* line 325, ../scss/_custom.scss */
+/* line 347, ../scss/_custom.scss */
 .news.panel .news-logo {
   padding: 6px;
 }
 
-/* line 330, ../scss/_custom.scss */
-.stagger {
-  margin-top: 6rem;
-}
-
-/* line 334, ../scss/_custom.scss */
+/* line 352, ../scss/_custom.scss */
 .type-label {
   text-transform: uppercase;
   color: #228FA8;
   margin-bottom: 1rem;
 }
 
-/* line 340, ../scss/_custom.scss */
+/* line 358, ../scss/_custom.scss */
 .alert {
   color: #EC6421;
+}
+
+/* line 362, ../scss/_custom.scss */
+h1 {
+  font-size: calc(30px + 4.8vw);
+}
+
+/* line 366, ../scss/_custom.scss */
+h2 {
+  font-size: calc(30px + 3.3vw);
+}
+
+/* line 370, ../scss/_custom.scss */
+h3 {
+  font-size: calc(22px + 2.2vw);
+}
+
+@media only screen and (min-width: 40.0625em) {
+  /* line 376, ../scss/_custom.scss */
+  .columns.overlap {
+    height: 300px;
+  }
+
+  /* line 380, ../scss/_custom.scss */
+  .stagger {
+    margin-top: 6rem;
+  }
+
+  /* line 384, ../scss/_custom.scss */
+  .padding-top-lg {
+    padding-top: 4rem;
+  }
+
+  /* line 388, ../scss/_custom.scss */
+  .padding-bottom-lg {
+    padding-bottom: 4rem;
+  }
+
+  /* line 392, ../scss/_custom.scss */
+  .margin-top-sm {
+    margin-top: 1rem;
+  }
+
+  /* line 395, ../scss/_custom.scss */
+  .margin-bottom-sm {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 90.0625em) {
+  /* line 401, ../scss/_custom.scss */
+  h1 {
+    font-size: calc(30px + 4vw);
+  }
 }

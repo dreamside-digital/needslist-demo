@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 
 .circle {
     background: $primary-color;
@@ -13,12 +17,12 @@
     img {
         bottom: 0;
         height: 100%;
+        width: 100%;
         left: 0;
         -o-object-fit: cover;
         object-fit: cover;
         position: absolute;
         top: 0;
-        width: 100%;
     }
 }
 
@@ -50,6 +54,7 @@ h1, h2, h2, h3, h4, h5, h6 {
         }
     }
 }
+
 
 h1, h2, h3, h4 {
     text-transform: uppercase;
@@ -172,6 +177,7 @@ small {
 }
 
 .testimonials {
+    width: 100%;
     max-width: 800px;
     display: flex;
     align-items: center;
@@ -184,6 +190,8 @@ small {
 
     .panel {
         padding: 2rem;
+        padding-bottom: 60px;
+
         .testimonial-logo {
             position: absolute;
             height: 120px;
@@ -202,7 +210,7 @@ small {
 
     .quote {
         p {
-            font-size: rem-calc(30);
+            font-size: rem-calc(22);
             font-style: italic;
         }
     }
@@ -226,15 +234,32 @@ small {
             font-size: 1.1rem;
         }
     }
+
+    @media #{$medium-up} {
+        .quote {
+            p {
+                font-size: rem-calc(30);
+                font-style: italic;
+            }
+        }
+
+        .attribution {
+
+            .small {
+                font-size: 0.9rem;
+            }
+        }
+
+    }
 }
 
 
 .padding-top-lg {
-    padding-top: 4rem;
+    padding-top: 2rem;
 }
 
 .padding-bottom-lg {
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
 }
 
 .margin-top-sm {
@@ -301,9 +326,6 @@ small {
     }
 }
 
-.columns.overlap {
-    height: 300px;
-}
 
 .logos {
     padding-top: 2rem;
@@ -327,10 +349,6 @@ small {
     }
 }
 
-.stagger {
-    margin-top: 6rem;
-}
-
 .type-label {
     text-transform: uppercase;
     color: $primary-color;
@@ -339,4 +357,48 @@ small {
 
 .alert {
     color: $alert-color;
+}
+
+h1 {
+    font-size: calc(30px + 4.8vw);
+}
+
+h2 {
+    font-size: calc(30px + 3.3vw);
+}
+
+h3 {
+    font-size: calc(22px + 2.2vw);
+}
+
+@media #{$medium-up} {
+
+    .columns.overlap {
+        height: 300px;
+    }
+
+    .stagger {
+        margin-top: 6rem;
+    }
+
+    .padding-top-lg {
+        padding-top: 4rem;
+    }
+
+    .padding-bottom-lg {
+        padding-bottom: 4rem;
+    }
+
+    .margin-top-sm {
+        margin-top: 1rem;
+    }
+    .margin-bottom-sm {
+        margin-bottom: 1rem;
+    }
+}
+
+@media #{$xlarge-up} {
+    h1 {
+        font-size: calc(30px + 4vw);
+    }
 }
