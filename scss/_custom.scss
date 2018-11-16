@@ -1,6 +1,33 @@
 body {
-    overflow-x: hidden;
+    padding-top: 72px;
 }
+
+nav.top-bar {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    height: auto;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    top: 0;
+
+    ul li a {
+        padding-top: 8px !important;
+            img {
+            padding: 8px;
+            height: 40px;
+        }
+    }
+
+    ul li.name a img {
+        height: 64px;
+        padding-left: 20px;
+    }
+
+    ul li.menu-icon a {
+        padding-top: 0 !important;
+    }
+}
+
 
 .circle {
     background: $primary-color;
@@ -297,8 +324,12 @@ small {
     }
 }
 
-.bg-white {
-    background: $white;
+.bg-warning {
+    background: $warning-color;
+}
+
+.bg-ghost {
+    background: $ghost;
 }
 
 .number {
@@ -329,8 +360,9 @@ small {
         p {
             font-size: $h4-font-size;
             color: $white;
-            font-weight: $font-weight-bold;
+            font-weight: 600;
             margin-top: 1rem;
+            line-height: 1.2;
         }
     }
 }
@@ -369,20 +401,21 @@ small {
 }
 
 .banner {
-    padding: 0.5rem;
+    padding: 1rem;
     position: fixed;
-    width: 100%;
     z-index: 3;
-    transition: transform 0.5s linear;
-    border-bottom: 3px solid $warning-color;
+    transition: transform 0.5s linear, opacity 0.5s ease-in;
+    right: 0;
 
     .alert-content {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: flex-start;
 
         p {
+            font-size: 1.2rem;
             font-weight: $font-weight-normal;
+            line-height: 1.2;
             margin-bottom: 0;
         }
 
@@ -393,6 +426,7 @@ small {
 
     &.fade-out {
         transform: translate3d(0, -100%, 0) !important;
+        opacity: 0 !important;
     }
 }
 
@@ -410,6 +444,64 @@ h3 {
 
 .large-12 {
     z-index: 0;
+}
+
+footer {
+    font-weight: $font-weight-light;
+    padding-top: 2rem;
+
+    h6 {
+        margin-bottom: 1rem;
+    }
+
+    ul {
+        list-style: none;
+        margin-left: 0;
+
+        li {
+
+            a {
+                color: $jet;
+                font-weight: $font-weight-light;
+            }
+        }
+
+        &.inline {
+            li {
+                display:inline;
+            }
+        }
+    }
+
+    .needslist-invite-footer {
+        img {
+            height: 60px;
+        }
+    }
+
+    .newsletter {
+        display: flex;
+        align-items: stretch;
+
+        .form {
+            flex-grow: 1;
+        }
+
+        #edit-actions--2 {
+            margin-left: 10px;
+        }
+
+        #edit-mergevars-email {
+            height: 50px;
+            box-shadow: none;
+        }
+    }
+
+    .bottom-bar {
+        li {
+            font-size: 1rem;
+        }
+    }
 }
 
 @media #{$medium-up} {
