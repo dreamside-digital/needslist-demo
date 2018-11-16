@@ -37,6 +37,10 @@ body {
     }
 }
 
+a {
+  text-decoration: underline;
+}
+
 h1, h2, h2, h3, h4, h5, h6 {
     span.underline {
         position: relative;
@@ -64,6 +68,11 @@ h1, h2, h3, h4 {
     text-transform: uppercase;
 }
 
+.xsmall {
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
 small {
    font-size: 1.1rem;
    font-weight: $font-weight-light;
@@ -77,6 +86,68 @@ small {
 .panel {
     box-shadow: -3px 3px 10px rgba(0,0,0,0.2);
     position: relative;
+}
+
+.recent-giving {
+  margin: auto;
+  padding: 0.5rem;
+  padding-right: 2rem;
+  padding-left: 0;
+  margin-top: 5%;
+  position: relative;
+  display: block;
+  right: 0;
+  border-right: 1px solid $primary-color;
+  align-items: right;
+  justify-content: right;
+  
+  .timestamp {
+  margin-top: 0;
+  padding-top: 0;
+  color: $primary-color;
+  }
+}
+.left{
+  left: 0;
+}
+
+.right {
+  right: 0;
+}
+
+.bottom {
+  bottom: 0;
+}
+
+.feature-items {
+    margin-bottom: 2rem;
+    margin:0 auto;
+    padding: 1rem;
+    position: absolute;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid $warning-color;
+    align-items: center;
+    justify-content: center;
+    
+    .feature-img {
+      margin-bottom: 0.5rem;
+      //height: 100px;
+      //width: 100px;
+      position: relative;
+      //border-radius: 50%;
+      align-items: center;
+      overflow: hidden;
+      
+      img {
+        display: inline;
+        margin: 0 auto;
+        margin-left: -25%; //centers the image
+        height: 100%;
+        width: auto;
+      }
+    }
+    
 }
 
 .urgent-needs {
@@ -276,7 +347,7 @@ small {
 .bg-info {
     background: $info-color;
     color: $white;
-    h1, h2, h3, h4, h5, h6, p {
+    h1, h2, h3, h4, h5, h6, p, a {
         color: $white;
     }
 }
