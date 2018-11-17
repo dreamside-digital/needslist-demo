@@ -3,8 +3,12 @@ var map = new mapboxgl.Map({
   container: 'global-map',
   style: 'mapbox://styles/sharon-nomadic-labs/cjokl7vg30f6t2sos01mvs16b',
   zoom: 1.6,
+  scrollZoom: false,
   center: [-31.949833, 27.947533],
 });
+
+var nav = new mapboxgl.NavigationControl();
+map.addControl(nav, 'bottom-right');
 
 var geojson = {
   type: 'FeatureCollection',
