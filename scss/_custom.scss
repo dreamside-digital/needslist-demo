@@ -1,14 +1,35 @@
+
 nav.top-bar {
     width: 100%;
     z-index: 10;
-
+    height: 5rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    top: 0;
+    margin-bottom: 10rem;
+
+    @media #{$medium-up} {
+      height: 5rem;
+      width: 100%;
+      margin-bottom: 10rem;
+
+    }
+    @media #{$medium-only} {
+      height: 5rem;
+      width: 100%;
+    }
+
+    @media #{$small-up} {
+      height: 5rem;
+    }
+    @media #{$small-only} {
+        height: 5rem;
+    }
 
     ul li a {
-        img {
-            padding: 8px;
-            height: 40px;
-        }
+      img {
+        padding: 8px;
+        height: 40px;
+      }
     }
 
     ul li.name a img {
@@ -25,6 +46,21 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
+.landing-head {
+  margin-top: 5rem;
+  @media #{$medium-up} {
+    height: 600px;
+    }
+  @media #{$medium-only} {
+    height: 15%;
+  }
+  @media #{$small-up} {
+    height: 5%;
+  }
+  @media #{$small-only} {
+    height: 15%;
+  }
+}
 
 .circle {
     background: $primary-color;
@@ -51,28 +87,60 @@ a:hover, a:focus {
 
   .rectangle{
     background: $info-color;
-    margin-bottom: 6rem;
+    padding-top: 15rem;
+    padding-bottom: 10rem;
     top:0;
     left: 0;
     right: 0;
     position: absolute;
     display: inline;
     width:100%;
-    height: 70%;
+
+
+    @media #{$large-up} {
     clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 100% 75%, 75% 100%, 0% 75%, 0% 75%);
+    }
+    @media #{$medium-up} {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 100% 75%, 75% 100%, 0% 75%, 0% 75%);
+    height: 100%;
+    }
+    @media #{$small-up} {
+    height: 60%;
+    }
 
     img {
       position: absolute;
       width: 100%;
-      top:5%;
       object-fit: fill;
+
+      @media #{$large-up} {
+        top:5%;
+      }
+      @media #{$medium-up} {
+        top:5%;
+      }
+
     }
   }
 
   .top-image {
     position: absolute;
     img {
-      margin-top:15%;
+      margin-top:20%;
+
+      @media #{$medium-up} {
+      margin-top:35%;
+    }
+      @media #{$medium-only} {
+      margin-top:35%;
+     }
+
+      @media #{$small-up} {
+      margin-top:10%;
+    }
+      @media #{$small-only} {
+      margin-top:10%;
+     }
     }
   }
 
@@ -205,6 +273,7 @@ small {
         .header {
             padding: 1rem;
             padding-top: 60px;
+
 
             &.bg-info {
 
@@ -536,13 +605,36 @@ small {
 }
 
 .banner {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid $warning-color;
     padding: 0.5rem;
-    padding-left: 20px;
-    padding-right: 20px;
-    width: 100%;
+    position: fixed;
     z-index: 3;
+    width: 10%;
     transition: transform 0.5s linear, opacity 0.5s ease-in;
-    position: relative;
+
+    @media #{$large-up} {
+      left:0;
+      bottom:0;
+      width: 200px;
+    }
+
+    @media #{$medium-up} {
+      right:0;
+      width: 200px;
+    }
+
+    @media #{$medium-only} {
+      width: 100%;
+      bottom:0;
+      height: 5%;
+    }
+
+    @media #{$small-only} {
+      width: 100%;
+      bottom:0;
+      height: 5%;
+    }
 
     .alert-content {
         p {
