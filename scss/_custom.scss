@@ -1,18 +1,11 @@
-body {
-    padding-top: 72px;
-}
-
 nav.top-bar {
-    position: fixed;
     width: 100%;
     z-index: 10;
-    height: auto;
+
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    top: 0;
 
     ul li a {
-        padding-top: 8px !important;
-            img {
+        img {
             padding: 8px;
             height: 40px;
         }
@@ -544,17 +537,14 @@ small {
 
 .banner {
     padding: 0.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
     width: 100%;
-    position: fixed;
     z-index: 3;
     transition: transform 0.5s linear, opacity 0.5s ease-in;
-    right: 0;
+    position: relative;
 
     .alert-content {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
         p {
             font-size: 1.2rem;
             font-weight: $font-weight-normal;
@@ -562,14 +552,9 @@ small {
             margin-bottom: 0;
         }
 
-        button {
-            white-space: nowrap;
+        a {
+            padding-left: 10px;
         }
-    }
-
-    &.fade-out {
-        transform: translate3d(0, -100%, 0) !important;
-        opacity: 0 !important;
     }
 }
 
