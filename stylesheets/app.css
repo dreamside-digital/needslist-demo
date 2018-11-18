@@ -10467,14 +10467,33 @@ footer .bottom-bar li {
 
 /* line 713, ../scss/_custom.scss */
 .marker {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: #228FA8;
+  cursor: default;
+}
+/* line 720, ../scss/_custom.scss */
+.marker.with-popup {
   cursor: pointer;
+  background-color: #F5C260;
+  width: 15px;
+  height: 15px;
 }
 
-/* line 721, ../scss/_custom.scss */
+/* line 729, ../scss/_custom.scss */
+.popup .mapboxgl-popup-close-button {
+  padding: 0 5px;
+  color: #CCCCCC;
+  line-height: 1;
+}
+/* line 735, ../scss/_custom.scss */
+.popup .mapboxgl-popup-content {
+  padding-top: 1.2rem;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+}
+
+/* line 741, ../scss/_custom.scss */
 .actions {
   display: flex;
   justify-content: space-between;
@@ -10482,61 +10501,61 @@ footer .bottom-bar li {
 }
 
 @media only screen and (min-width: 40.0625em) {
-  /* line 729, ../scss/_custom.scss */
+  /* line 749, ../scss/_custom.scss */
   .padding-top-lg {
     padding-top: 4rem;
   }
 
-  /* line 733, ../scss/_custom.scss */
+  /* line 753, ../scss/_custom.scss */
   .padding-top-sm {
     padding-top: 2rem;
   }
 
-  /* line 737, ../scss/_custom.scss */
+  /* line 757, ../scss/_custom.scss */
   .padding-bottom-lg {
     padding-bottom: 4rem;
   }
 
-  /* line 741, ../scss/_custom.scss */
+  /* line 761, ../scss/_custom.scss */
   .margin-top-sm {
     margin-top: 1rem;
   }
 
-  /* line 744, ../scss/_custom.scss */
+  /* line 764, ../scss/_custom.scss */
   .margin-bottom-sm {
     margin-bottom: 1rem;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 750, ../scss/_custom.scss */
+  /* line 770, ../scss/_custom.scss */
   .overlap-1 {
     height: 150px;
   }
 
-  /* line 754, ../scss/_custom.scss */
+  /* line 774, ../scss/_custom.scss */
   .overlap-2 {
     height: 350px;
   }
 
-  /* line 758, ../scss/_custom.scss */
+  /* line 778, ../scss/_custom.scss */
   .stagger {
     margin-top: 6rem;
   }
 
-  /* line 763, ../scss/_custom.scss */
+  /* line 783, ../scss/_custom.scss */
   .how-it-works .step {
     position: relative;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 1rem;
   }
-  /* line 769, ../scss/_custom.scss */
+  /* line 789, ../scss/_custom.scss */
   .how-it-works .step .number {
     position: absolute;
     z-index: 1;
     display: flex;
   }
-  /* line 774, ../scss/_custom.scss */
+  /* line 794, ../scss/_custom.scss */
   .how-it-works .step .number h3 {
     font-size: 8.75rem;
     color: #F5C260;
@@ -10544,22 +10563,22 @@ footer .bottom-bar li {
     margin-top: 0;
     transform: translate(-5px, -5px);
   }
-  /* line 782, ../scss/_custom.scss */
+  /* line 802, ../scss/_custom.scss */
   .how-it-works .step .number h4 {
     font-size: 3rem;
   }
-  /* line 788, ../scss/_custom.scss */
+  /* line 808, ../scss/_custom.scss */
   .how-it-works .step .circle img {
     object-fit: contain;
   }
-  /* line 793, ../scss/_custom.scss */
+  /* line 813, ../scss/_custom.scss */
   .how-it-works .step p {
     color: #FFFFFF;
     font-weight: 600;
     margin-top: 1rem;
     line-height: 1.2;
   }
-  /* line 802, ../scss/_custom.scss */
+  /* line 822, ../scss/_custom.scss */
   .how-it-works #step-1:after {
     content: "";
     position: absolute;
@@ -10573,19 +10592,19 @@ footer .bottom-bar li {
     opacity: 0;
     transition: all 0.5s linear;
   }
-  /* line 817, ../scss/_custom.scss */
+  /* line 837, ../scss/_custom.scss */
   .how-it-works #step-1.expanded:after {
     width: 100%;
     top: 55%;
     opacity: 1;
   }
-  /* line 825, ../scss/_custom.scss */
+  /* line 845, ../scss/_custom.scss */
   .how-it-works #step-1.gone:after {
     width: 0;
     top: 36%;
     opacity: 0;
   }
-  /* line 834, ../scss/_custom.scss */
+  /* line 854, ../scss/_custom.scss */
   .how-it-works #step-2:after {
     content: "";
     position: absolute;
@@ -10599,7 +10618,7 @@ footer .bottom-bar li {
     opacity: 0;
     transition: all 0.5s linear;
   }
-  /* line 849, ../scss/_custom.scss */
+  /* line 869, ../scss/_custom.scss */
   .how-it-works #step-2.expanded:after {
     width: 100%;
     top: 85%;

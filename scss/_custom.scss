@@ -711,11 +711,31 @@ footer {
 }
 
 .marker {
-  width: 10px;
-  height: 10px;
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
   background-color: $primary-color;
-  cursor: pointer;
+  cursor: default;
+
+  &.with-popup {
+    cursor: pointer;
+    background-color: $warning-color;
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.popup {
+    .mapboxgl-popup-close-button {
+        padding: 0 5px;
+        color: $iron;
+        line-height: 1;
+    }
+
+    .mapboxgl-popup-content {
+        padding-top: 1.2rem;
+        font-family: $font-family-sans-serif;
+    }
 }
 
 .actions {

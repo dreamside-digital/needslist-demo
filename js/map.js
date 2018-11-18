@@ -10,7 +10,7 @@ var map = new mapboxgl.Map({
 var nav = new mapboxgl.NavigationControl();
 map.addControl(nav, 'bottom-right');
 
-var geojson = {
+var locations = {
   type: 'FeatureCollection',
   features: [
     {
@@ -31,16 +31,6 @@ var geojson = {
       },
       properties: {
         title: 'Rome, Italy',
-      }
-    },
-    {
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [23.727539, 37.983810]
-      },
-      properties: {
-        title: 'Athens, Greece',
       }
     },
     {
@@ -147,16 +137,6 @@ var geojson = {
       type: 'Feature',
       geometry: {
         type: 'Point',
-        coordinates: [-122.714431, 38.440468]
-      },
-      properties: {
-        title: 'Santa Rosa, California, USA',
-      }
-    },
-    {
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
         coordinates: [-121.838783, 39.728958]
       },
       properties: {
@@ -171,16 +151,6 @@ var geojson = {
       },
       properties: {
         title: 'Houston, Texas, USA',
-      }
-    },
-    {
-      type: 'Feature',
-      geometry: {
-        type: 'Point',
-        coordinates: [-78.638176, 35.779591]
-      },
-      properties: {
-        title: 'Raleigh, North California, USA',
       }
     },
     {
@@ -236,15 +206,80 @@ var geojson = {
   ]
 };
 
+var locationsWithPopup = {
+  type: 'FeatureCollection',
+  features: [
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-122.714431, 38.440468]
+      },
+      properties: {
+        title: 'Santa Rosa, California, USA',
+        popupTitle: 'Blog title',
+        popupDescription: 'Teaser text',
+        url: '#'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [-78.638176, 35.779591]
+      },
+      properties: {
+        title: 'Raleigh, North Carolina, USA',
+        popupTitle: 'Blog title',
+        popupDescription: 'Teaser text',
+        url: '#'
+      }
+    },
+    {
+      type: 'Feature',
+      geometry: {
+        type: 'Point',
+        coordinates: [23.727539, 37.983810]
+      },
+      properties: {
+        title: 'Athens, Greece',
+        popupTitle: 'Blog title',
+        popupDescription: 'Teaser text',
+        url: '#'
+      }
+    },
+  ]
+}
 
-geojson.features.forEach(function(marker) {
+
+locations.features.forEach(function(marker) {
 
   // create a HTML element for each feature
   var el = document.createElement('div');
   el.className = 'marker';
+  el.setAttribute('title', marker.properties.title);
 
   // make a marker for each feature and add to the map
   new mapboxgl.Marker(el)
   .setLngLat(marker.geometry.coordinates)
+  .addTo(map);
+});
+
+locationsWithPopup.features.forEach(function(marker) {
+
+  // create a HTML element for each feature
+  var el = document.createElement('div');
+  el.className = 'marker with-popup';
+  el.setAttribute('title', marker.properties.title);
+
+  // create a Popup to add to marker
+  var popupHTML = "<p class='xsmall'><strong>" + marker.properties.popupTitle + "</strong></p><p class='xsmall'>" + marker.properties.popupDescription + "</p><p class='xsmall'><a target='_blank' href='" + marker.properties.url + "'>More →</a></p>"
+  var popup = new mapboxgl.Popup({ offset: 10, className: "popup" })
+    .setHTML(popupHTML);
+
+  // make a marker for each feature and add to the map
+  new mapboxgl.Marker(el)
+  .setLngLat(marker.geometry.coordinates)
+  .setPopup(popup)
   .addTo(map);
 });
