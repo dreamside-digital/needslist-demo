@@ -307,6 +307,26 @@ small {
         .need {
             padding: 1rem;
 
+            .content {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .description {
+                flex: 1 1 60%;
+            }
+
+            .image-container {
+                flex: 1 1 40%;
+                padding: 0.5rem;
+
+            }
+
+            .image {
+                max-width: 160px;
+                min-width: 100px;
+            }
+
             p {
                 margin-bottom: 0;
             }
