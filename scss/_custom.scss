@@ -14,8 +14,6 @@ nav.top-bar {
     @media #{$medium-up} { 
     height: 5rem;
     width: 100%;
-    margin-bottom: 10rem;
-
   }
     @media #{$medium-only} {
     height: 5rem;
@@ -24,9 +22,13 @@ nav.top-bar {
     
     @media #{$small-up} { 
     height: 5rem;
+    width: 100%;
+
   }
     @media #{$small-only} {
-    height: 5rem;
+    height: 4rem;
+    width: 100%;
+
    }
 
     ul li a {
@@ -47,21 +49,6 @@ nav.top-bar {
     }
 }
 
-.landing-head {
-  margin-top: 5rem;
-  @media #{$medium-up} {
-    height: 600px;
-    }
-  @media #{$medium-only} {
-    height: 15%;
-  }
-  @media #{$small-up} {
-    height: 5%;
-  }
-  @media #{$small-only} {
-    height: 15%;
-  }
-}
 
 .circle {
     background: $primary-color;
@@ -88,60 +75,70 @@ nav.top-bar {
 
   .rectangle{
     background: $info-color;
-    padding-top: 15rem;
-    padding-bottom: 10rem;
-    top:0;
+    padding-bottom: 38rem;
+    top: 3rem;
     left: 0;
     right: 0;
     position: absolute;
     display: inline;
     width:100%;
-
+    clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 100% 75%, 75% 100%, 0% 75%, 0% 75%);
     
-    @media #{$large-up} {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 100% 75%, 75% 100%, 0% 75%, 0% 75%);
+    @media #{$large-only} {
+      background: $info-color;
+      padding-bottom: 38rem;
+      top: 3rem;
+      left: 0;
+      right: 0;
+      position: absolute;
+      display: inline;
+      width:100%;
+      
     }
-    @media #{$medium-up} {
-    clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 100% 75%, 75% 100%, 0% 75%, 0% 75%);
-    height: 100%;
+    @media #{$medium-only} {
+      background: $info-color;
+      top: 5rem;
+      left: 0;
+      right: 0;
+      position: absolute;
+      display: inline;
+      width:100%;
+      overflow: hidden;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 100% 60%, 75% 65%, 0% 60%, 0% 60%);
     }
-    @media #{$small-up} {
-    height: 60%;
+    @media #{$small-only} {
+      background: $info-color;
+      padding-top: 15rem;
+      padding-bottom: 5rem;
+      left: 0;
+      right: 0;
+      position: absolute;
+      width:100%;
+      overflow: hidden;
+      clip-path: none;
+      height: auto;
     }
 
     img {
       position: absolute;
-      width: 100%;
-      object-fit: fill;
-
+      object-fit: cover;
+      top: 15%;
       @media #{$large-up} {
-        top:5%;
+        width: 100%;
       }
-      @media #{$medium-up} {
-        top:5%;
+      @media #{$large-only} {
+        width: 100%;
       }
-      
     }
   }
 
   .top-image {
     position: absolute;
     img {
-      margin-top:20%;
-      
-      @media #{$medium-up} { 
-      margin-top:35%;
-    }
-      @media #{$medium-only} {
-      margin-top:35%;
-     }
-      
-      @media #{$small-up} { 
-      margin-top:10%;
-    }
+      margin-top:30%;
       @media #{$small-only} {
-      margin-top:10%;
-     }
+      visibility: hidden;
+    }
     }
   }
 
@@ -272,7 +269,7 @@ small {
     .theme {
         padding: 0;
         position: relative;
-        margin-top: 60px;
+        margin-top: 3rem;
 
         .theme-logo {
             position: absolute;
