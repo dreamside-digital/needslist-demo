@@ -3,6 +3,10 @@ nav.top-bar {
     z-index: 10;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 
+    .logo {
+
+    }
+
     ul li a {
         img {
             padding: 8px;
@@ -10,9 +14,17 @@ nav.top-bar {
         }
     }
 
-    ul li.name a img {
-        height: 64px;
-        padding-left: 20px;
+    ul li.name {
+      position: relative;
+
+        .logo {
+          position: absolute;
+        }
+
+        a img {
+          height: 64px;
+          padding-left: 20px;
+        }
     }
 
     ul li.menu-icon a {
@@ -24,19 +36,53 @@ a:hover, a:focus {
     text-decoration: underline;
 }
 
-.landing-head {
-  margin-top: 5rem;
+.landing-section {
+  background: url('../images/bg-header.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 3rem;
+
   @media #{$medium-up} {
-    height: 600px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 65%, 100% 75%, 75% 100%, 0% 80%, 0% 75%);
+  }
+}
+
+.landing-head {
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background: rgba(13, 110, 124, 0.7);
+    position: absolute;
+    z-index: 0;
+  }
+}
+
+@media #{$medium-up} {
+  .landing-section {
+    height: 80vh;
+    margin-bottom: 0;
+  }
+
+  .landing-head {
+    .overlay {
+      height: 85vw;
+      width: 85vw;
+      background: rgba(13, 110, 124, 0.7);
+      position: absolute;
+      z-index: -1;
+      border-radius: 50%;
+      top: -20vh;
+      left: -3vw;
     }
-  @media #{$medium-only} {
-    height: 15%;
   }
-  @media #{$small-up} {
-    height: 5%;
-  }
-  @media #{$small-only} {
-    height: 15%;
+}
+
+@media #{$large-up} {
+  .landing-section {
+    .overlay {
+      height: 80vw;
+      width: 80vw;
+    }
   }
 }
 
@@ -64,9 +110,8 @@ a:hover, a:focus {
     }
 }
 
-  .rectangle{
-    background: $info-color;
-    top:0;
+.rectangle{
+    background-color: $info-color;
     left: 0;
     right: 0;
     position: absolute;
@@ -170,7 +215,7 @@ small {
 }
 
 .large {
-    font-size: 1.8rem;
+    font-size: calc(16px + 1vw);
     padding-right: 1rem;
 }
 
@@ -403,7 +448,9 @@ small {
     margin-bottom: 1rem;
 }
 .landing-text {
-    color: $white;
+  color: $white;
+  padding-top: 3vh;
+
     h1, h2, h3, h4, h5, h6, p, a {
         color: $white;
     }
@@ -491,7 +538,13 @@ small {
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
-    align-items: center;
+    align-items: stretch;
+
+    .columns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     .partner-logo img {
         max-height: 120px;
