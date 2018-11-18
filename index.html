@@ -16,9 +16,11 @@
   </head>
   <body>
 
-    <section class="banner bg-warning">
-      <div class="alert-content">
-        <p><strong>THE LATEST: </strong>Here’s a concrete way to put your cryptocurrency to use for Florence relief. <a class="warning bold">Read more →</a></p>
+    <section class="banner" data-aos="slide-left">
+      <div class="panel">
+        <div class="alert-content">
+          <small><a class="close">&times;</a><strong>THE LATEST: </strong>Here’s a concrete way to put your cryptocurrency to use for Florence relief. <a class="alert bold">Read more →</a></small>
+        </div>
       </div>
     </section>
 
@@ -70,7 +72,7 @@
     <section class="urgent-needs">
       <div class="row">
         <div class="large-12 columns">
-          <h2><span class="underline">Communities in crisis</span></h2>
+          <h2>Communities in <span class="underline">crisis</span></h2>
           <div class="row">
 
             <div class="small-12 medium-4 columns" data-aos="fade-up">
@@ -217,8 +219,8 @@
               <div class="row">
 
                 <div class="small-12 medium-3 columns">
-                  <h5 class="small margin-right-lg">Needs met</h5>
                     <div class="recent-giving">
+                      <h5 class="small margin-right-lg">Needs met</h5>
                       <div class="item" data-aos="fade-down" data-aos-delay="150">
                         <p class="xsmall"><strong>Warm Sleeping Bags for homeless refugee & asylum seekers in Rome</strong> <br> - anonymous</p>
                         <p class="xsmall timestamp">1 day ago</p>
@@ -239,7 +241,7 @@
                 </div>
 
                 <div class="small-12 medium-9 columns">
-                  <div class="row">
+                  <div class="row" style="overflow-x: hidden;">
                     <div class="small-12 medium-4 large-4 columns text-center" data-aos="fade-left">
                       <h2 class="number">$350k</h2>
                       <h5>invested in local economies</h5>
@@ -274,7 +276,7 @@
       <div class="row">
         <div class="columns large-12 padding-top-lg">
           <h3>Join our network</h3>
-          <div class="row">
+          <div class="row" style="overflow-x: hidden;">
 
             <div class="small-12 medium-6 large-5 large-push-1 feature-items columns" data-aos="fade-right">
               <div class="panel">
@@ -380,7 +382,7 @@
             </div>
           </div>
 
-          <div class="row logos">
+          <div class="row logos" style="overflow-x: hidden;">
             <div class="large-2 columns" data-aos="fade-left">
               <div class="partner-logo text-center">
                 <img src="images/logos/trip-advisor.png" alt="">
@@ -731,6 +733,10 @@
         document.addEventListener('aos:in:step-3', ({ detail }) => {
           document.getElementById('step-2').classList.toggle('expanded')
         });
+
+        $('.close').click(function(e) {
+            $(this).closest(".banner").addClass('hide')
+        })
 
       });
     </script>
