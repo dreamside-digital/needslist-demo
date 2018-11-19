@@ -52,6 +52,8 @@ a:hover, a:focus {
 }
 
 .landing-head {
+    padding-bottom: 1rem;
+
   .overlay {
     height: 100%;
     width: 100%;
@@ -63,11 +65,12 @@ a:hover, a:focus {
 
 @media #{$medium-up} {
   .landing-section {
-    height: 80vh;
     margin-bottom: 0;
   }
 
   .landing-head {
+    padding-bottom: calc(2rem + 7vw);
+
     .overlay {
       height: 85vw;
       width: 85vw;
